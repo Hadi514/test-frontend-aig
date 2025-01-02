@@ -158,7 +158,6 @@ import EmployerAllJobCat from "./Employer/AllJobCat";
 import EmployerAllJobInd from "./Employer/AllJobIndustries";
 import PdfCvProvider from "./ContextApi/PdfCvProvider";
 import PdfCv from "./Adminside/Resume/PdfCv";
-import { HelmetProvider } from "react-helmet-async";
 
 function App() {
 
@@ -187,12 +186,10 @@ function App() {
                                               <JobConProvider>
                                                 <JobCityProvider>
                                                   <PdfCvProvider>
-                                                    <HelmetProvider>
                                                   <JobPortalNavbar />
                                                   <Scrolltop />
                                                   <AllRoutes />
                                                   <Footer />
-                                                  </HelmetProvider>
                                                   </PdfCvProvider>
                                                 </JobCityProvider>
                                               </JobConProvider>

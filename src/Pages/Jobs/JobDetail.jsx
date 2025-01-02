@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext, useEffect } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import JobApplyForm from "./JobApplyForm";
 import companyDefaultImg from '../../assets/Images/company-default-img.avif'
 import Swal from "sweetalert2";
@@ -72,23 +71,6 @@ function JobDetail() {
 
   return (
     <>
-
-{postedJobsById && (
-        <Helmet>
-          <title>{postedJobsById.title || "AIG Jobs"}</title>
-          <meta name="description" content={postedJobsById.description || "Job details available here"} />
-          <meta property="og:title" content={postedJobsById.title} />
-          <meta property="og:description" content={postedJobsById.description} />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content={window.location.href} />
-          <meta
-            property="og:image"
-            content={postedJobsById.jobImage || companyDefaultImg}
-          />
-        </Helmet>
-      )}
-
-
       <section
         className="job-detail"
         style={{ backgroundColor: "#F2F5F8" }}
