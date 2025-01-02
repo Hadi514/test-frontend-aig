@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 export default function JobProvider({ children }) {
   const apiUrl = import.meta.env.VITE_API_URL;
-    const [colAdjust, setColAdjust] = useState(12)
+    const [colAdjust, setColAdjust] = useState(6)
     const [postedJobsById, setPostedJobsById] = useState("")
   const navigate = useNavigate();
   const [jobTitle, setJobTitle] = useState("");
